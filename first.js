@@ -12,7 +12,7 @@ const deleteChatsBtn = document.querySelector("#delete-chats-btn");
 const stopResponseBtn = document.getElementById("stop-response-btn");
 
 // API SETUP
-const API_KEY = "AIzaSyAPsfrk0YK13EUNBJlxnDuSzvWDQ4V9X8I";
+const API_KEY = "AIzaSyAPsfrk0YK13EUNBJlxnDuSzvWDQ******";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 
@@ -317,3 +317,4 @@ document.querySelector("#add-file-btn").addEventListener("click", () => fileInpu
 
 // Handle form submit
 promptForm.addEventListener("submit", handleFormSubmit);
+
