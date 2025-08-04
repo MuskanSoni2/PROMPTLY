@@ -6,7 +6,7 @@
 
  // Your web app's Firebase configuration
  const firebaseConfig = {
-   apiKey: "AIzaSyDiNnD7VDEpR_nKjWLH2mn_-g5LO_8X0fk",
+   apiKey: "AIzaSyDiNnD7VDEpR_nKjWLH2mn_-g5********",
    authDomain: "login-form-5baa9.firebaseapp.com",
    projectId: "login-form-5baa9",
    storageBucket: "login-form-5baa9.firebasestorage.app",
@@ -91,4 +91,5 @@
             showMessage('Account does not Exist', 'signInMessage');
         }
     })
+
  })
