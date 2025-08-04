@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promptly AI Chatbot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="first.css">
+</head>
+<body>
+  <aside class="chat-history-sidebar" id="chat-history-sidebar">
+    <button id="toggle-sidebar-btn" class="material-symbols-outlined">menu</button>
+    <h3>Chat History</h3>
+    <ul id="history-list"></ul>
+  </aside>  
+  
+  <div class="container">
+    <header class="app-header">
+      <h1 class="heading">Hello, Promptly AI !!!</h1>
+      <h2 class="sub-heading">How can I assist you today?</h2>
+    </header>
+
+    <ul class="suggestions">
+      <li class="suggestions-item">
+        <p class="text">How can I write the code ??</p>
+        <span class="material-symbols-outlined">code</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">How to design an attractive poster?</p>
+        <span class="material-symbols-outlined">draw</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">Create a React JS tool component.</p>
+        <span class="material-symbols-outlined">lightbulb</span>
+      </li>
+      <li class="suggestions-item">
+        <p class="text">Tools for debugging JavaScript.</p>
+        <span class="material-symbols-outlined">explore</span>
+      </li>
+    </ul>
+
+    <div class="chats-container"></div>
+
+    <div class="prompt-container">
+      <div class="prompt-wrapper">
+        <form action="#" class="prompt-form">
+          <input type="text" placeholder="Type your prompt here..." class="prompt-input" required>
+          <div class="prompt-actions">
+            <div class="file-upload-wrapper">
+              <img src="#" alt="File Preview" class="file-preview" hidden>
+              <p class="file-name" hidden></p>
+              <input type="file" accept="image/*,.pdf,.txt,.csv" id="file-input" hidden>
+              <button id="add-file-btn" type="button" class="material-symbols-outlined">attach_file</button>
+              <button id="cancel-file-btn" type="button" class="material-symbols-outlined" hidden>close</button>
+            </div>
+
+            <button id="stop-response-btn" class="material-symbols-outlined" hidden>stop_circle</button>
+            <button id="send-prompt-btn" type="submit" class="material-symbols-outlined">arrow_upward</button>
+          </div>
+        </form>
+        <button id="theme-toggle-btn" class="material-symbols-outlined">light_mode</button>
+        <button id="delete-chats-btn" class="material-symbols-outlined">delete</button>
+      </div>
+      <p class="disclaimer-text">Promptly AI may make mistakes. Please verify important information.</p>
+    </div>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
